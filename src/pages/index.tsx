@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Home() {
@@ -11,7 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex items-center justify-center h-screen">
-        <div>Contents</div>
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <Link href="poker">Enter</Link>
+        </button>
       </main>
     </>
   )
